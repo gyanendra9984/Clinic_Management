@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('../src/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.spinner {
+  height : 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

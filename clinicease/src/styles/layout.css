@@ -1,0 +1,84 @@
+.main {
+  padding: 1px;
+  height: 100vh;
+}
+.layout{
+  display: flex;
+}
+.sidebar {
+  min-height: 100%;
+  width: 300px;
+  border-radius: 5px;
+  background-color: brown;
+  box-shadow: 0 0 2px gray;
+  margin-right: 10px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  height: 10vh;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right:4px;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+}
+.body {
+  min-height: 87vh;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  margin-right:4px;
+  box-shadow: 0 0 2px gray;
+  background-color: white;
+}
+.logo{
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+.menu{
+    margin-top: 50px;
+}
+.menuitem{
+    margin-top: 30px;
+}
+.menuitem a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.menuitem i{
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+.active{
+    background-color: white;
+    padding: 10px;
+}
+.active a,.active i{
+    color: brown;
+}
+.headercontent{
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height:60px;
+
+}
+.headercontent i{
+  margin-right: 20px;
+font-size: 1.2rem;
+}
+.headercontent a{
+  text-decoration: none;
+  color: blue;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
