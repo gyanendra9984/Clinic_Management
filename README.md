@@ -29,4 +29,4 @@ A comprehensive clinic management application built using **MongoDB**, **Express
 ## Demo
 
 You can view the live demo of the Clinic App here:  
-[Live Demo](https://your-clinic-app-link.com)
+(https://clinic-management-1.onrender.com)
