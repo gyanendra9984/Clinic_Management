@@ -9,7 +9,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/admin/getallusers",
+          "https://clinic-management-456y.onrender.com/api/admin/getallusers",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

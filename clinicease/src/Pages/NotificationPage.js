@@ -15,7 +15,7 @@ const NotificationPage = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:8080/api/users/getallnotification",
+        "https://clinic-management-456y.onrender.com/api/users/getallnotification",
         { userId: user._id },
         {
           headers: {
@@ -40,7 +40,7 @@ const NotificationPage = () => {
       try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:8080/api/users/deleteallnotification",
+        "https://clinic-management-456y.onrender.com/api/users/deleteallnotification",
         { userId: user._id },
         {
           headers: {

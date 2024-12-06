@@ -16,7 +16,7 @@ const ApplyDoctor = () => {
         try {
           dispatch(showLoading())
         const res = await axios.post(
-          "http://localhost:8080/api/users/applydoctor",
+          "https://clinic-management-456y.onrender.com/api/users/applydoctor",
           {
             ...values,
             userId: user._id,

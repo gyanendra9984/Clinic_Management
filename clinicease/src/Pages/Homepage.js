@@ -10,7 +10,7 @@ const Homepage = () => {
   const getUserData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/api/users/getalldoctor",
+        "https://clinic-management-456y.onrender.com/api/users/getalldoctor",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

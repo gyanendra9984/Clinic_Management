@@ -19,7 +19,7 @@ const Login = () => {
       }
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:8080/api/users/login",
+        "https://clinic-management-456y.onrender.com/api/users/login",
         { email, password }
       );
       window.location.reload();

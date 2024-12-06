@@ -12,8 +12,8 @@ export default function ProtectedRoute({ children }) {
       try {
         dispatch(showLoading());
         const res = await axios.post(
-          "http://localhost:8080/api/users/getUserData",
-          {token:localStorage.getItem("token")},
+          "https://clinic-management-456y.onrender.com/api/users/getUserData",
+          { token: localStorage.getItem("token") },
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

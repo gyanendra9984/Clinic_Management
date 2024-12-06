@@ -11,14 +11,14 @@ const Doctors = () => {
     const handleAccountStatus = async(record,status) => {
       try {
          const response = await axios.post(
-             "http://localhost:8080/api/admin/changestatus",
-           {doctorId:record._id,userId:record.userId,status:status},
+           "https://clinic-management-456y.onrender.com/api/admin/changestatus",
+           { doctorId: record._id, userId: record.userId, status: status },
            {
              headers: {
                Authorization: `Bearer ${localStorage.getItem("token")}`,
              },
            }
-          );
+         );
           if (response.data.success) {
               message.success(response.data.success);
               window.location.reload();
@@ -33,7 +33,7 @@ const Doctors = () => {
     const fetchDoctors = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/api/admin/getalldoctors",
+          "https://clinic-management-456y.onrender.com/api/admin/getalldoctors",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

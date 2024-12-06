@@ -20,7 +20,7 @@ const Signup = () => {
       }
      dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:8080/api/users/signup",
+        "https://clinic-management-456y.onrender.com/api/users/signup",
         { name, email, password }
       );
       dispatch(hideLoading());

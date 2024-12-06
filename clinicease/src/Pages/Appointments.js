@@ -10,7 +10,7 @@ const Appointments = () => {
     const getAppointments = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8080/api/users/userappointments",
+          "https://clinic-management-456y.onrender.com/api/users/userappointments",
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -20,7 +20,7 @@ const Profile = () => {
       try {
         dispatch(showLoading());
         const res = await axios.post(
-          "http://localhost:8080/api/doctor/updateprofile",
+          "https://clinic-management-456y.onrender.com/api/doctor/updateprofile",
           {
             ...values,
             userId: user._id,
@@ -52,13 +52,13 @@ const Profile = () => {
     const fetchDoctorInfo = async () => {
         try {
             const response = await axios.post(
-                "http://localhost:8080/api/doctor/getdoctorinfo",
-                { userId: params.id },
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem("token")}`,
-                    },
-                }
+              "https://clinic-management-456y.onrender.com/api/doctor/getdoctorinfo",
+              { userId: params.id },
+              {
+                headers: {
+                  Authorization: `Bearer ${localStorage.getItem("token")}`,
+                },
+              }
             );
 
             if (response.data.success) {
